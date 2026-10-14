@@ -2,7 +2,7 @@
 
 My personal portfolio website, showcasing my projects, resume and contact details. I'm a B.Tech Computer Science graduate focused on **Data Analyst** and **AI Engineer** roles.
 
-🔗 🔗 **Live link:** https://portfolio-3vb73i466-digvijay14.vercel.app
+🔗 🔗 **Live link:** https://portfolio-25ehb76u0-digvijay14.vercel.app
 
 ![Portfolio screenshot](screenshots/home.png)
 
