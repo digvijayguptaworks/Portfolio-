@@ -1,57 +1,61 @@
-# Digvijay Gupta — Portfolio (Next.js + Tailwind)
+# Digvijay Gupta | Portfolio
 
-A multi-page personal portfolio for a machine learning engineer, built with the
-Next.js App Router and Tailwind CSS. White + wood colour theme.
+My personal portfolio website, showcasing my projects, resume and contact details. I'm a B.Tech Computer Science graduate focused on **Data Analyst** and **AI Engineer** roles.
+
+🔗 **Live site:** [YOUR-PRODUCTION-URL.vercel.app](https://YOUR-PRODUCTION-URL.vercel.app)
+
+![Portfolio screenshot](screenshots/home.png)
 
 ## Pages
 
-- `/` — Home (hero, about, skills snapshot, selected work, CTA)
-- `/resume` — Education, skills, certifications, achievements (+ PDF download)
-- `/work` — All projects in detail
-- `/contact` — Contact details and links
+| Page | Route | What it shows |
+|---|---|---|
+| Home | `/` | Introduction and highlights |
+| Work | `/work` | Projects I've built |
+| Resume | `/resume` | Education, skills and experience |
+| Contact | `/contact` | Ways to get in touch |
 
-## Getting started
+## Featured projects
+
+- **[AIttendance](https://github.com/digvijayguptaworks/AIttendance):** face recognition attendance system (Flask, OpenCV, MediaPipe, scikit-learn)
+- **[SpamShield](https://github.com/digvijayguptaworks/SpamShield-Intelligent-Email-SMS-Classifier):** spam message classifier with a Streamlit UI (NLP, Naive Bayes)
+- **[MindInsight API](https://mindinsight-1.onrender.com):** mental health score prediction from social media usage (FastAPI, scikit-learn)
+- **SmartMart:** grocery and inventory automation system
+
+## Tech stack
+
+- **Framework:** Next.js 14 (React)
+- **Deployment:** Vercel
+
+## Run locally
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/digvijayguptaworks/Portfolio-.git
+cd Portfolio-
+
+# 2. Install dependencies
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
-npm start        # run the production build
+
+# 3. Start the dev server
+npm run dev
 ```
 
-## Project structure
+Open **http://localhost:3000** in your browser.
 
-```
-app/
-  layout.js        # shared shell: nav + footer + global CSS
-  page.js          # Home
-  resume/page.js   # Resume
-  work/page.js     # Work
-  contact/page.js  # Contact
-  globals.css      # Tailwind + theme tokens
-components/
-  Nav.js           # top navigation (active-link aware, mobile menu)
-  Footer.js
-  ProjectCard.js   # reusable project card
-lib/
-  data.js          # ALL site content lives here — edit this to update the site
-public/
-  photo.jpg        # your profile photo (replace this file)
-  Digvijay-Gupta-Resume.pdf
+### Build for production
+
+```bash
+npm run build
+npm start
 ```
 
-## Add your photo
+## Deployment
 
-Replace `public/photo.jpg` with your own portrait (a portrait-orientation image
-works best — it is cropped to a 5:6 frame). Keep the filename `photo.jpg`, or
-update the `src` in `app/page.js`.
+The site is deployed on [Vercel](https://vercel.com). Every push to the `main` branch triggers an automatic redeploy.
 
-## Editing content
+## Contact
 
-Everything — name, links, skills, projects, education, certifications — is in
-`lib/data.js`. Update it there and every page updates.
-
-## Deploy
-
-Push to GitHub and import the repo on [Vercel](https://vercel.com) — it detects
-Next.js automatically. Or run `npm run build && npm start` on any Node host.
+**Digvijay Gupta**
+GitHub: [digvijayguptaworks](https://github.com/digvijayguptaworks)
+Email: digvijaygworks@gmail.com
